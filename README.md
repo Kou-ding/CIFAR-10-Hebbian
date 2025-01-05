@@ -21,3 +21,4 @@ python --version
 
 # This is a folder persistent way 
 pyenv local 3.12.0
+```
