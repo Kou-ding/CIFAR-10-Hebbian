@@ -164,8 +164,7 @@ def main():
         transforms.Normalize((0.5,), (0.5,))
     ])
     
-    mnist_train = torchvision.datasets.MNIST(root='./dataset', train=True,
-                                           download=True, transform=transform)
+    mnist_train = torchvision.datasets.MNIST(root='./dataset', train=True, download=True, transform=transform)
     
     # Create sequence dataset with limited samples for testing
     print("Creating sequence dataset...")
