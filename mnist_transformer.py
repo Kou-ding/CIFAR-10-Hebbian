@@ -198,7 +198,10 @@ def main():
     # Move tensors to device and visualize
     model.visualize_prediction(curr_img.to(device), curr_num.to(device))
     
-    num_test_samples = 15  # Change this to test more images
+    # Number of random samples to test 
+    num_test_samples = 15
+    
+    # Visualize random samples
     for _ in range(num_test_samples):
         random_idx = np.random.randint(0, len(train_dataset))
         curr_img, curr_num, _, _ = train_dataset[random_idx]
