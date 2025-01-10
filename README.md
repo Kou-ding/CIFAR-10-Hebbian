@@ -1,5 +1,6 @@
-# CIFAR-10-Hebbian
-A Hebbian Learning inspired implementation of a neural network trained on the CIFAR-10 dataset. This is the third and final assignment of the course "Neural Networks - Deep Learning".
+# MNIST-Transformer
+A Transformer neural network trained on the MNIST dataset. Its goal is to generate an image of the next digit in the sequence when given an image from the dataset as input. This is the third and final assignment of the course "Neural Networks - Deep Learning".
+
 
 ### Python pyenv
 To control different versions of python you can use pyenv:
