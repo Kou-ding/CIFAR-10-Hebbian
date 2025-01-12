@@ -117,3 +117,22 @@
 \end{frame}
 
 % Frame 27: Real SVM
+\begin{frame}
+    \frametitle{Real SVM}
+    To compensate for the inadequate fake svm model I attach, along with this presentation's pdf,
+    an SVM model with proper margin maximization. These are its main characteristics:
+    \begin{itemize}
+        \item PCA: Least components to explain 95\% of the variance. Less computationally
+        expensive because of the reduced dimensionality.
+        \item RBF kernel
+        \item SVC: SVM for classification
+        \item 3 fold cross validation
+        \item 12 combinations $c=[0.1, 1, 10]$ and $\gamma=[\text{scale}, \text{auto}, 0.1, 1]$
+        \item Best parameters: \texttt{'svc\_\_C': 10, 'svc\_\_gamma': 'scale'}
+    \end{itemize}
+    \textbf{Output example:} Test Accuracy: 46.80\%
+\end{frame}
+% 'scale' means gamma = 1 / (n_features * X.variance)
+% 'auto' means gamma = 1 / n_features
+% gamma: rbf parameter that defines how far the influence of a single training example reaches.
+% c: controls how much you want to avoid misclassifying each training example
